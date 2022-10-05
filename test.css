@@ -1,5 +1,6 @@
 body {
     background-color: grey;
+    margin: 0px;
 }
 
 nav {
@@ -12,21 +13,23 @@ a {
     margin: 10px;
 }
 
+body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .page {
     background-color: white;
-    margin: 10px;
-    border-top: 10px solid grey;
-    border-bottom: 10px solid grey;
+    border: 20px solid grey;
+    min-width: 1310px;
 }
 
 .pictures {
     display: grid;
     grid-template-columns: repeat(5, 250px);
-    grid-auto-rows: minmax(0px, auto);
     grid-template-areas: "logo logo logo logo one" "logo logo logo logo two" "logo logo logo logo three" "logo logo logo logo three" "four four five six seven" "eight nine nine ten eleven" "eight thirteen fourteen fourteen fifteen" "twelve thirteen sixteen seventeen eighteen" "nineteen twenty twenty . .""nineteen twenty twenty . address";
     text-align: right;
     gap: 10px;
-    border-bottom: 10px solid white;
     margin: 10px;
 }
 
